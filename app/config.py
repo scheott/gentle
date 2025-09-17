@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     STRIPE_WEBHOOK_SECRET: Optional[str] = None
 
     class Config:
-        env_file = ".env"
+        env_file = "api/.env"
+        extra = "ignore"
 
 settings = Settings()
